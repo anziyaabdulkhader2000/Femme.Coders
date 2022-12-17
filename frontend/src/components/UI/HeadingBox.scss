@@ -1,0 +1,47 @@
+.headingbox {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background: url(front.jpeg);
+    // background: url(WhatsApp Image 2022-12-17 at 23.17.55.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 44rem;
+    border-radius: 1.5rem;
+    margin: 3rem auto;
+    position: relative;
+    z-index: 100;
+
+    @media screen and (max-width: 480px) {
+        background-size: contain;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    &__titlebox {
+        padding-left: 3.5rem;
+        z-index: 999;
+    }
+    
+    &__title {
+        font-family:'Times New Roman', Times, serif;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        color: rgb(205, 29, 170);
+        margin-bottom: 3rem;
+        
+        @media screen and (max-width: 480px) {
+            font-size: 3rem;
+        }
+    }
+
+    &__btn {
+        padding: .8rem 2.2rem;
+        font-size: 2rem;
+        text-decoration: none;
+        color: rgb(166, 56, 146);
+        background-color: #2D31FA;
+        border-radius: 5rem;
+    }
+}

@@ -29,6 +29,12 @@ export default class Login extends Component {
   .then((res) => res.json())
   .then((data) => {
     console.log(data,"userRegistration");
+    if(data.status=="ok")
+    {
+      alert("login successfull");
+      window.localStorage.setItem("token",data.data);
+      window.location.href="./userDetails";
+    }
   });
 }
   render() {
