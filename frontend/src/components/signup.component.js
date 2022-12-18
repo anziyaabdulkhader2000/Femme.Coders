@@ -36,6 +36,12 @@ export default class SignUp extends Component {
     }).then((res)=>res.json())
     .then((data)=>{
       console.log(data,"userRegister");
+      if(data.status=="ok")
+      {
+        alert("login successful");
+        window.localStorage("token",data.data);
+        window.location.href="./userDetails";
+      }
     });
   }
   render() {
