@@ -3,6 +3,21 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
+
+
+//import Home from "./components//Home/Home";
+ //import Layout from "./UI/Layout";
+// import HeadingBox from "./UI/HeadingBox";
+// import LoadingSpinner from "./UI/LoadingSpinner/LoadingSpinner";
+
+// const LogIn1 = React.lazy(() => import("./pages/LogIn/LogIn"))
+// const SignUp1 = React.lazy(() => import("./pages/SignUp/Signup"))
+// const SinglePage = React.lazy(() => import("./pages/SinglePage/SinglePage"))
+// const Write = React.lazy(() => import("./pages/Write/Write"))
+// const AboutUs = React.lazy(() => import("./pages/AboutUs/AboutUs"))
+
+
+
 import Login from './components/login.component'
 import SignUp from './components/signup.component'
 
@@ -30,6 +45,8 @@ function App() {
               </ul>
             </div>
           </div>
+
+          
         </nav>
 
 

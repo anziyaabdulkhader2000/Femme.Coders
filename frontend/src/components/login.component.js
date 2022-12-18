@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+//import {Navigate}  from 'react-router-dom';
+import { Route, Switch, Redirect } from "react-router-dom";
 
 export default class Login extends Component {
   constructor(props){
@@ -9,9 +11,12 @@ export default class Login extends Component {
     };
     this.handleSubmit=this.handleSubmit.bind(this);
   }
+
+
   handleSubmit(e){
     e.preventDefault();
     const{ email, password }= this.state;
+    // Navigate();
     console.log( email, password);
     fetch("http://localhost:5000/login-user",{
       method:"POST",
@@ -30,7 +35,8 @@ export default class Login extends Component {
   .then((data) => {
     console.log(data,"userRegistration");
     if(data.status=="ok")
-    {
+    { 
+      // navigate('/home');
       alert("login successfull");
       window.localStorage.setItem("token",data.data);
       window.location.href="./userDetails";

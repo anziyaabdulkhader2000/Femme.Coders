@@ -16,7 +16,7 @@ const Footer = () => {
     
             <ul className="footer__list">
                 <li>
-                    <Link to="/home" className="footer__items"> Events</Link>
+                    <Link to="/home" className="footer__items"> Internship</Link>
                 </li>
                 <li>
                     <Link to="/job" className="footer__items">Carrier Development</Link>
